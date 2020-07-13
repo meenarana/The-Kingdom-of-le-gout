@@ -1,0 +1,159 @@
+<html>
+<head>
+<script language ="JavaScript">
+function myfunc()
+{
+var sum=0
+
+
+	if(document.f1.list1.selectedIndex==0)
+	amount=6
+	else if(document.f1.list1.selectedIndex==1)
+	amount=6
+	else if(document.f1.list1.selectedIndex==2)
+	amount=6.5
+	else if(document.f1.list1.selectedIndex==3)
+	amount=7
+	else if(document.f1.list1.selectedIndex==4)
+	amount=7
+	else if(document.f1.list1.selectedIndex==5)
+	amount=7.4
+	else if(document.f1.list1.selectedIndex==6)
+	amount=7.5
+	else if(document.f1.list1.selectedIndex==7)
+	amount=8
+	else if(document.f1.list1.selectedIndex==8)
+	amount=8
+	else if(document.f1.list1.selectedIndex==9)
+	amount=8
+	else if(document.f1.list1.selectedIndex==10)
+	amount=8
+	else if(document.f1.list1.selectedIndex==11)
+	amount=8.5
+	else if(document.f1.list1.selectedIndex==12)
+	amount=7
+	else if(document.f1.list1.selectedIndex==13)
+	amount=7
+	else if(document.f1.list1.selectedIndex==14)
+	amount=7
+	else if(document.f1.list1.selectedIndex==15)
+	amount=8
+	else if(document.f1.list1.selectedIndex==16)
+	amount=8
+	else if(document.f1.list1.selectedIndex==17)
+	amount=8
+	else if(document.f1.list1.selectedIndex==18)
+	amount=9
+	else if(document.f1.list1.selectedIndex==19)
+	amount=9
+	else if(document.f1.list1.selectedIndex==20)
+	amount=9
+	else if(document.f1.list1.selectedIndex==21)
+	amount=10
+	else if(document.f1.list1.selectedIndex==22)
+	amount=10
+	else if(document.f1.list1.selectedIndex==23)
+	amount=10
+	else if(document.f1.list1.selectedIndex==24)
+	amount=4
+	else if(document.f1.list1.selectedIndex==25)
+	amount=4
+	else if(document.f1.list1.selectedIndex==26)
+	amount=5
+	else if(document.f1.list1.selectedIndex==27)
+	amount=5
+	else if(document.f1.list1.selectedIndex==28)
+	amount=6
+	else if(document.f1.list1.selectedIndex==29)
+	amount=6
+	else if(document.f1.list1.selectedIndex==30)
+	amount=4
+	else if(document.f1.list1.selectedIndex==31)
+	amount=5
+	else if(document.f1.list1.selectedIndex==32)
+	amount=5
+	else if(document.f1.list1.selectedIndex==33)
+	amount=6
+	else if(document.f1.list1.selectedIndex==34)
+	amount=3
+	else if(document.f1.list1.selectedIndex==35)
+	amount=3
+	else if(document.f1.list1.selectedIndex==36)
+	amount=3
+
+
+msg="HELLO "+ document.f1.t1.value+ "  Your Final Amount is  $" + amount + "  Please wait for 15 minutes  "
+alert(msg)
+}
+</script>
+</head>
+
+<body background="pics\back.jpg" color="white">
+<p style="color:white;" align="right" id="time"></p>
+
+<script>
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("time").innerHTML = d.toLocaleTimeString();
+}
+</script>
+
+<h1> <center>
+<font face="algerian" font color="F7FE69" size=8> The Kingdom of le goût </font></center> </h1>
+<font face="timesnewroman" font color="white" size=6>
+<form name="f1" method="post" action=" ">
+<p> Customer Name <input type="text" name="t1"> <br>
+
+<br> Please choose from the options given below:
+
+</font>
+
+<h3> Select the food item </h3>
+<select name="list1">
+<option> Jr veggie burger
+<option> Chilli burger
+<option> Cheese burger
+<option> Double Cheese burger
+<option> The Hawaiian
+<option> Patty melt on rye 
+<option> Avocado burger
+<option> The jalepeno popper
+<option> Swiss mushroom
+<option> Turkey burger
+<option> The colossus
+<option> Frisco Burger
+<option> French bread
+<option> Baked ziti
+<option> Grandma slice
+<option> New York slice
+<option> Chicago pizza
+<option> Puck’s smoked salmon pizza
+<option> White biana
+<option> Salad pizza
+<option> Bagel
+<option> Tuna and sweet corn
+<option> Carbonara
+<option> Sushi pizza
+<option> Hot chocolate
+<option> Cocktail
+<option> Blue lagoon
+<option> Mojito
+<option> Strawberry margarita
+<option> Cuba libre
+<option> Tomato pie
+<option> Pizza cone
+<option> Croissant
+<option> Snow mountain donuts
+<option> Swiss rolls
+<option> Prelzel
+<option> Breadsticks
+</select>
+
+<input type="button" value="Submit" onclick= 'myfunc()'>
+ 
+
+</form>
+</body>
+</html>
